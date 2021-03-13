@@ -44,6 +44,7 @@ public class Caso19 {
 			System.out.println("==== R E S U L T A D O S ====");
 			System.out.println("El triángulo " + mensaje);
 			System.out.println("El perímetro del triángulo es " + operacion);
+			
 		}
 		
 	}
