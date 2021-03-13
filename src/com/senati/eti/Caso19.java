@@ -16,10 +16,36 @@ public class Caso19 {
 		System.out.print("Ingrese lado 3........: ");
 		int c = suma.nextInt();
 		
-		int total = a + b + c;
+		int operacion = a + b + c;
 		
-		System.out.println("El perimetro del triangulo es " +  total);
-
+		String mensaje = "";
+		
+		if((a < b + c) && ((a > b - c) || (a > c -b) ))
+			mensaje = "Existe";
+		else
+			mensaje = "No existe";
+		
+		if ((b < a + c) && ((b > a - c) || (b > c - a) ))
+			mensaje = "Existe";
+		else
+			mensaje = "No existe";
+		
+		if ((c < a + b) && ((c > a - b) || (c > b - a) ))
+			mensaje = "Existe";
+		else
+			mensaje = "No existe";
+		
+		if (mensaje == "Existe") {
+			System.out.println("==== R E S U L T A D O S ====");
+			System.out.println("El triángulo " + mensaje);
+			System.out.println("El perímetro del triángulo es " + operacion);
+		}
+		else if (mensaje == "No existe") {
+			System.out.println("==== R E S U L T A D O S ====");
+			System.out.println("El triángulo " + mensaje);
+			System.out.println("El perímetro del triángulo es " + operacion);
+		}
+		
 	}
 
 }
